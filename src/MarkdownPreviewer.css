@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:    "title title"
-                            "editor preview"
+                            "editor preview";
+    grid-gap: 0px 30px;
 }
 
 #editor{
@@ -14,9 +15,12 @@
 
 #preview{
     grid-area: preview;
+    border: 1px solid grey;
+    padding: 0px 10px;
 }
 
 #title{
     grid-area: title;
     text-transform: uppercase;
+    text-align: center;
 }
