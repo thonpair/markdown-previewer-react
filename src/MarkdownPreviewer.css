@@ -1,0 +1,22 @@
+#container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:    "title title"
+                            "editor preview"
+}
+
+#editor{
+    resize: none;
+    grid-area: editor;
+}
+
+#preview{
+    grid-area: preview;
+}
+
+#title{
+    grid-area: title;
+    text-transform: uppercase;
+}
