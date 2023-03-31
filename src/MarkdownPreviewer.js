@@ -21,7 +21,7 @@ export default class MardowPreviewer extends React.Component {
             <div id="container">
                 <h1 id="title">Markdown Previewer</h1>
                 <textarea id="editor" onChange={this.handleChange} value={this.state.text}></textarea>
-                <div id="preview"><Markdown>{this.state.text}</Markdown></div>
+                <div id="preview"><Markdown gfm={true} breaks={true} value={this.state.text} /></div>
             </div>
         )
     }
